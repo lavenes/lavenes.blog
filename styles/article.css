@@ -1,13 +1,44 @@
+.article .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.another-posts-container {
+    margin-top: 44px;
+}
+
 .article {
     width: 100%;
     max-width: 653px;
     margin: 0 auto;
-    padding: 32px 0;
+    padding: 32px 0 0 0;
+    font-size: 18px;
 }
 
 .article .article-header {
     display: flex;
     align-items: center;
+}
+
+.article .share-group {
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.article .share-group .share-button {
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 20px;
+    color: #6e6e73;
+    transition: color .2s ease;
+}
+
+.article .share-group .share-button:hover {
+    color: rgb(10,132,255);
 }
 
 .article .article-header .date-container {
@@ -18,7 +49,7 @@
     display: block;
     margin: 0;
     color: #6e6e73;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     margin-bottom: 4px;
 }
@@ -55,6 +86,116 @@
     text-decoration: underline;
 }
 
+.article .article-ending {
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.article .article-ending .share-title {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.article .article-ending .share-group {
+    margin-top: 20px;
+}
+
+.article .article-ending .actions-group {
+    background: #f5f5f7;
+    border-radius: 10px;
+    margin-bottom: 44px;
+}
+
+.article .article-ending .actions-group .action-item {
+    padding: 32px 0;
+    margin: 0 36px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d2d2d7;
+    display: flex;
+    align-items: center;
+}
+
+.article .article-ending .actions-group .action-item:last-child {
+    border: none;
+}
+
+.article .article-ending .actions-group .action-item .title {
+    flex: 1;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.article .article-ending .actions-group .action-item .title ion-icon {
+    margin-right: 12px;
+}
+
+.article .article-ending .actions-group .action-item .action-btn {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #06c;
+    display: flex;
+    align-items: center;
+}
+
+.article .article-ending .actions-group .action-item .action-btn .label {
+    margin-right: 4px;
+    text-decoration: none;
+}
+
+.article .article-ending .actions-group .action-item .action-btn .label:hover {
+    text-decoration: underline;
+}
+
+.article .article-ending .contacts-group {
+    margin-top: 36px;
+    margin-bottom: 44px;
+}
+
+.article .article-ending .contacts-group .title-c {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.article .article-ending .contacts-group .contact-items-container {
+    display: flex;
+}
+
+.article .article-ending .contacts-group .contact-item {
+    flex: 1;
+}
+
+
+.article .article-ending .contacts-group .contact-item .title {
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 7px;
+}
+
+
+.article .article-ending .contacts-group .contact-item .text {
+    display: block;
+    font-size: 14px;
+    color: #1d1d1f;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.article .article-ending .contacts-group .contact-item .text.mail {
+    color: #06c;
+    text-decoration: none;
+}
+
+.article .article-ending .contacts-group .contact-item .text.mail:hover {
+    text-decoration: underline;
+}
+
 .article hr {
     opacity: .35;
     margin: 24px 0;
@@ -88,17 +229,18 @@
 .image {
     width: 100%;
     max-width: 980px;
-    min-height: 700px;
+    min-height: 550px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 14px;
     margin: auto;
+    /*box-shadow: 3px 3px 20px 2px rgb(0 0 0 / 20%);*/
 }
 
 .header-title {
     margin: 32px 0;
-    margin-bottom: 48px;
+    margin-bottom: 0;
     position: relative;
 }
 
@@ -112,8 +254,8 @@
 
 .header-title .block {
     width: 50px;
-    height: 7px;
-    margin-top: 4px;
+    height: 6px;
+    margin-top: 2px;
     margin-left: 24px;   
     background: rgb(255,55,95);
     background: linear-gradient(146deg, rgba(255,55,95,1) 0%, rgb(177, 67, 255) 100%); 

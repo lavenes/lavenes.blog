@@ -1,3 +1,63 @@
+.post-card-detail {
+    width: 100%;
+    display: flex;
+    padding: 32px 0;
+    border-bottom: 1px solid #d2d2d7;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.post-card-detail:last-child {
+    border: none;
+}
+
+.post-card-detail .banner-container {
+    width: 160px;
+    height: 96px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 24px;
+}
+
+.post-card-detail .banner-container .banner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
+    position: relative;
+}
+
+.post-card-detail .information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card-detail .information .tag {
+    font-size: 12px;
+    color: #6e6e73;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.post-card-detail .information .title {
+    font-size: 17px;
+    font-weight: 700;
+    -webkit-transition: opacity 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
+    transition: opacity 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
+    color: #000;
+}
+
+.post-card-detail .information .date {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: #6e6e73;
+}
+
 .post-container-first-tiles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -61,7 +121,7 @@
     transition: opacity 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
 }
 
-.post-card .information .title:hover {
+.post-card:hover .information .title, .post-card-detail:hover .information .title {
     opacity: .7;
 }
 
@@ -122,7 +182,7 @@
     transition: transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
 }
 
-.post-card-feature .banner::after, .post-card .banner::after {
+.post-card-feature .banner::after, .post-card .banner::after ,.post-card-detail .banner-container .banner::after {
     content: '';
     display: inline-block;
     width: 100%;
@@ -140,7 +200,7 @@
     transform: scale(1.05);
 }
 
-.post-card-feature:hover .banner::after, .post-card:hover .banner::after {
+.post-card-feature:hover .banner::after, .post-card:hover .banner::after, .post-card-detail:hover .banner-container .banner::after {
     background: rgba(0,0,0,.3)!important;
 }
 
