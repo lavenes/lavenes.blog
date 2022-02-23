@@ -1,0 +1,22 @@
+.information-container {
+    display: flex;
+    align-items: center;
+}
+
+.information-container b {
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+.information-container .icon {
+    margin-right: 8px;
+}
+
+.view h1 {
+    margin-bottom: 10px;
+}
+
+.map-block {
+    width: 100%;
+    margin-top: 32px;
+}
